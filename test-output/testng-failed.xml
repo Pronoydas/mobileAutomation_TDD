@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Mobile Automation]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="qa.listner.TestListner"/>
+  </listeners>
+  <test thread-count="5" name="Mobile Automation Testing(failed)">
+    <parameter name="newCommandTimeout" value="4000"/>
+    <parameter name="platformName" value="Android"/>
+    <classes>
+      <class name="qa.test.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initDriver"/>
+          <include name="loginWithInvalidUsername"/>
+          <include name="after_Method"/>
+          <include name="before_Method"/>
+        </methods>
+      </class> <!-- qa.test.LoginTest -->
+    </classes>
+  </test> <!-- Mobile Automation Testing(failed) -->
+</suite> <!-- Failed suite [Mobile Automation] -->

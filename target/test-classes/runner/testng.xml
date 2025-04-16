@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Mobile Automation"  parallel="false" thread-count="5">
+	<listeners>
+		<listener class-name="qa.listner.TestListner"></listener>
+	</listeners>
+	<test name="Mobile Automation Testing">
+	   <parameter name="platformName" value="Android"></parameter>
+	   <parameter name="newCommandTimeout" value="4000"></parameter>	
+		<classes>
+			<class name="qa.test.LoginTest"></class>
+			<class name="qa.test.ProductTests"></class>
+		</classes>
+		
+	</test>
+	
+</suite>
